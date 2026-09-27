@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #3 - Responsive Web Design</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================
+     TASK 3 / TASK 4: NAVBAR
+========================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Aiym</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#task0">Task 0</a></li>
+                <li class="nav-item"><a class="nav-link" href="#task1">Task 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#task2">Task 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="hero-section">
+    <div class="container text-center">
+        <p class="small-label">ASSIGNMENT #3</p>
+        <h1>Responsive Web Design</h1>
+        <p class="hero-text">
+            Media Queries + Bootstrap Grid
+        </p>
+        <p class="hero-description">
+            A responsive web project that adapts to mobile, tablet, and desktop screens.
+        </p>
+        <a href="#portfolio" class="btn btn-light mt-2">View</a>
+    </div>
+</header>
+
+<main>
+
+<!-- =========================
+     TASK 0
+========================= -->
+<section id="task0" class="section-block">
+    <div class="container">
+        <div class="section-heading">
+            <span>Task 0</span>
+            <h2>Responsive Typography</h2>
+            <p>
+                The font sizes change depending on the screen width using CSS media queries.
+            </p>
+        </div>
+
+        <div class="typography-demo">
+            <h3>Responsive Heading</h3>
+            <p>
+                This text changes its size on mobile, tablet, and desktop screens.
+                Resize the browser window to see the difference.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     TASK 1
+========================= -->
+<section id="task1" class="section-block light-section">
+    <div class="container">
+        <div class="section-heading">
+            <span>Task 1</span>
+            <h2>Responsive Layout with Media Queries</h2>
+            <p>
+                Desktop: three boxes in one row. Tablet: two boxes in the first row.
+                Mobile: all boxes are stacked.
+            </p>
+        </div>
+
+        <div class="media-boxes">
+            <div class="media-box">
+                <div class="box-number">01</div>
+                <h3>Design</h3>
+                <p>Creating a clean and simple visual layout.</p>
+            </div>
+
+            <div class="media-box">
+                <div class="box-number">02</div>
+                <h3>Development</h3>
+                <p>Building the webpage with HTML and CSS.</p>
+            </div>
+
+            <div class="media-box">
+                <div class="box-number">03</div>
+                <h3>Responsive</h3>
+                <p>Making the website usable on different screens.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     TASK 2
+========================= -->
+<section id="task2" class="section-block">
+    <div class="container">
+        <div class="section-heading">
+            <span>Task 2</span>
+            <h2>Bootstrap Responsive Columns</h2>
+            <p>
+                Bootstrap's 12-column grid is used for three responsive columns.
+            </p>
+        </div>
+
+        <div class="row g-4 bootstrap-demo">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bootstrap-card">
+                    <h3>Column 1</h3>
+                    <p>Desktop: 4/12 columns. Tablet: 6/12. Mobile: 12/12.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bootstrap-card">
+                    <h3>Column 2</h3>
+                    <p>Desktop: 4/12 columns. Tablet: 6/12. Mobile: 12/12.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="bootstrap-card">
+                    <h3>Column 3</h3>
+                    <p>Desktop: 4/12 columns. Tablet: 6/12. Mobile: 12/12.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     TASK 4: PORTFOLIO
+========================= -->
+<section id="portfolio" class="section-block light-section">
+    <div class="container">
+        <div class="section-heading">
+            <span>Task 4</span>
+            <h2>Responsive Portfolio</h2>
+            <p>
+                This section combines Bootstrap Grid and custom CSS media queries.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- LEFT: PROJECTS -->
+            <div class="col-12 col-lg-8">
+                <div class="content-card">
+                    <h3 class="content-title">My Projects</h3>
+
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <article class="project-card">
+                                <div class="project-icon">01</div>
+                                <h4>Smart Transport</h4>
+                                <p>
+                                    A smart bus-stop website that helps users see
+                                    bus routes, bus locations, and alternative routes.
+                                </p>
+                                <span class="project-tag">Web Design</span>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <article class="project-card">
+                                <div class="project-icon">02</div>
+                                <h4>Student Website</h4>
+                                <p>
+                                    A simple responsive website created with HTML
+                                    and CSS for learning front-end development.
+                                </p>
+                                <span class="project-tag">HTML / CSS</span>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <article class="project-card">
+                                <div class="project-icon">03</div>
+                                <h4>Java Project</h4>
+                                <p>
+                                    A course enrollment system demonstrating
+                                    object-oriented programming concepts.
+                                </p>
+                                <span class="project-tag">Java</span>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <article class="project-card">
+                                <div class="project-icon">04</div>
+                                <h4>Responsive Page</h4>
+                                <p>
+                                    A responsive page using Bootstrap's grid
+                                    system and CSS media queries.
+                                </p>
+                                <span class="project-tag">Bootstrap</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: SIDEBAR -->
+            <div class="col-12 col-lg-4">
+                <aside class="sidebar-card">
+                    <div class="profile-circle">A</div>
+                    <h3>Personal Information</h3>
+                    <p class="sidebar-role">Student & Front-End Learner</p>
+
+                    <div class="info-list">
+                        <div>
+                            <strong>Name</strong>
+                            <span>Nygmet Aiym</span>
+                        </div>
+                        <div>
+                            <strong>Group</strong>
+                            <span>IT-2514</span>
+                        </div>
+                        <div>
+                            <strong>Email</strong>
+                            <span>252758@astanait.edu.kz</span>
+                        </div>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Kazakhstan</span>
+                        </div>
+                    </div>
+
+                    <a href="mailto:252758@astanait.edu.kz" class="btn btn-dark w-100">
+                        Contact Me
+                    </a>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- RESPONSIVE NOTES -->
+<section class="section-block">
+    <div class="container">
+        <div class="section-heading">
+            <span>Responsive Design</span>
+            <h2>Screen Size Behavior</h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="screen-info">
+                    <h3>Mobile</h3>
+                    <p>Small typography, stacked boxes and one-column content.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="screen-info">
+                    <h3>Tablet</h3>
+                    <p>Medium typography, two boxes per row and responsive columns.</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="screen-info">
+                    <h3>Desktop</h3>
+                    <p>Larger typography, three boxes per row and wider layout.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container text-center">
+        <p>Assignment #3 — Responsive Web Design</p>
+        <p class="footer-small">Media Queries + Bootstrap Grid</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+/* =========================================
+   ASSIGNMENT #3
+   Responsive Web Design
+   Media Queries + Bootstrap Grid
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #212529, #495057);
+    color: white;
+}
+
+.small-label {
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    opacity: 0.8;
+}
+
+.hero-section h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 15px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section-block {
+    padding: 75px 0;
+}
+
+.light-section {
+    background: #f5f6f8;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    max-width: 720px;
+    margin: auto;
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+/* =========================
+   TASK 0
+   RESPONSIVE TYPOGRAPHY
+========================= */
+
+.typography-demo {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px;
+    border: 1px solid #dee2e6;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.typography-demo h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.typography-demo p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* =========================
+   TASK 1
+   MEDIA QUERY BOXES
+========================= */
+
+.media-boxes {
+    display: flex;
+    gap: 24px;
+}
+
+.media-box {
+    flex: 1;
+    padding: 35px;
+    min-height: 220px;
+    border-radius: 18px;
+    background: white;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.box-number {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #6c757d;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.media-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.media-box p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+/* =========================
+   TASK 2
+   BOOTSTRAP CARDS
+========================= */
+
+.bootstrap-card {
+    height: 100%;
+    padding: 35px;
+    background: #212529;
+    color: white;
+    border-radius: 18px;
+}
+
+.bootstrap-card h3 {
+    margin-bottom: 15px;
+}
+
+.bootstrap-card p {
+    margin: 0;
+    line-height: 1.7;
+    color: #dee2e6;
+}
+
+/* =========================
+   TASK 4
+   PORTFOLIO
+========================= */
+
+.content-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #dee2e6;
+}
+
+.content-title {
+    margin-bottom: 25px;
+    font-size: 1.7rem;
+}
+
+.project-card {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid #dee2e6;
+    border-radius: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #212529;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #6c757d;
+    line-height: 1.65;
+}
+
+.project-tag {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #e9ecef;
+    color: #495057;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar-card {
+    background: #212529;
+    color: white;
+    padding: 35px;
+    border-radius: 18px;
+    position: sticky;
+    top: 90px;
+}
+
+.profile-circle {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+    color: #212529;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.sidebar-card h3 {
+    margin-bottom: 5px;
+}
+
+.sidebar-role {
+    color: #adb5bd;
+    margin-bottom: 30px;
+}
+
+.info-list {
+    margin-bottom: 25px;
+}
+
+.info-list div {
+    padding: 13px 0;
+    border-bottom: 1px solid #495057;
+}
+
+.info-list strong,
+.info-list span {
+    display: block;
+}
+
+.info-list strong {
+    font-size: 0.8rem;
+    color: #adb5bd;
+    margin-bottom: 4px;
+}
+
+.info-list span {
+    font-size: 0.95rem;
+}
+
+/* =========================
+   SCREEN INFO
+========================= */
+
+.screen-info {
+    padding: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 16px;
+    background: white;
+    height: 100%;
+}
+
+.screen-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.screen-info p {
+    color: #6c757d;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+    padding: 35px 0;
+    background: #212529;
+    color: white;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.footer-small {
+    color: #adb5bd;
+    margin-top: 7px !important;
+    font-size: 0.85rem;
+}
+
+/* =========================================
+   MEDIA QUERIES
+   Desktop: 992px and above
+   Tablet: 768px - 991px
+   Mobile: below 768px
+========================================= */
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-text {
+        font-size: 1.3rem;
+    }
+
+    .section-block {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    /* Task 0 */
+    .typography-demo h3 {
+        font-size: 1.75rem;
+    }
+
+    .typography-demo p {
+        font-size: 1rem;
+    }
+
+    /* Task 1: two boxes per row */
+    .media-boxes {
+        flex-wrap: wrap;
+    }
+
+    .media-box {
+        flex: 0 0 calc(50% - 12px);
+    }
+
+    .media-box:last-child {
+        flex-basis: 100%;
+    }
+
+    .sidebar-card {
+        position: static;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    .hero-section {
+        padding: 65px 18px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-text {
+        font-size: 1.15rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .section-block {
+        padding: 50px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .section-heading p {
+        font-size: 0.9rem;
+    }
+
+    /* Task 0: small font */
+    .typography-demo {
+        padding: 25px;
+    }
+
+    .typography-demo h3 {
+        font-size: 1.45rem;
+    }
+
+    .typography-demo p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    /* Task 1: stacked vertically */
+    .media-boxes {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .media-box {
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .media-box h3 {
+        font-size: 1.25rem;
+    }
+
+    .media-box p {
+        font-size: 0.9rem;
+    }
+
+    /* Portfolio */
+    .content-card {
+        padding: 20px;
+    }
+
+    .project-card {
+        padding: 23px;
+    }
+
+    .sidebar-card {
+        position: static;
+        padding: 25px;
+    }
+
+    /* Custom visibility on mobile */
+    .small-label {
+        font-size: 0.7rem;
+    }
+
+    .footer-small {
+        font-size: 0.75rem;
+    }
+}
